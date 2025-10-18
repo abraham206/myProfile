@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="profile__card" data-testid="test-profile-card">
+      <figure class="profile-image-box">
+        <img
+          data-testid="test-user-avatar"
+          class="profile__image"
+          src="image2.jpg"
+          alt="me"
+        />
+
+        <figcaption data-testid="test-user-name" class="profile-name">
+          Amaize Abraham
+        </figcaption>
+      </figure>
+
+       <p data-testid="test-user-name" class="name">
+          Amaize Abraham
+        </p>
+      <p data-testid="test-user-biography" class="profile-biography">
+        I'm a Frontend developer. I am passionate about building responsive
+        websites and webapps.I'm skilled in HTML, CSS, Javascript.
+      </p>
+
+      <p class="heading">Contact</p>
+      <div data-testid="test-user-social-links" class="socialLinks">
+        <a
+          data-testid="test-user-social-network"
+          href="https://x.com/abra48818?t=cMUeuXSYY5C47EkJbXL-ew&s=09"
+          target="_blank"
+          class="links"
+          >twitter</a
+        >
+        <a data-testid="test-user-social-network" href="https://www.linkedin.com/in/amaize-abraham-35a34a38b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank" class="links">Linkedin</a>
+        <a
+          data-testid="test-user-social-network"
+          href="https://github.com/abraham206"
+          target="_blank"
+          class="links"
+          >Github</a
+        >
+      </div>
+
+      <div class="hobies">
+        <h2 class="hobbies">Hobbies</h2>
+        <div class="listhead">
+        <div data-testid="test-user-hobbies" class="list">Coding</div>
+        <div data-testid="test-user-hobbies" class="list">Learning</div>
+        <div data-testid="test-user-hobbies" class="list">Playing games</div>
+        </div>
+
+        <div class="dislikes">
+        <h2 class="hobbies">Dislikes</h2>
+        <div class="listhead">
+        <div data-testid="test-user-dislikes" class="list">laziness</div>
+        <div data-testid="test-user-dislikes" class="list">Procastination</div>
+        <div data-testid="test-user-dislikes" class="list">lying</div>
+        </div>
+
+
+      </div>
+      <div data-testid="test-user-time" class="profile__currenttime">
+        <p class="currenttime">728343209300</p>
+      </div>
+    </div>
+
+    <script>
+      const time = document.querySelector(".currenttime");
+
+      const timer = Date.now();
+      time.textContent = timer;
+    </script>
+  </body>
+</html>
