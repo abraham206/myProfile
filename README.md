@@ -5,7 +5,7 @@ A clean profile card built with HTML, CSS and Javascript.It provides information
 Installation
 
 1. Clone the repository:
- git clone https://github.com/abraham206/profile_card.git
+ git clone https://github.com/abraham206/myProfile.git
 
  2.Open index.html in your browser - no additional setup needed.
 
